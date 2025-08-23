@@ -9,11 +9,13 @@ import Pricing from './pages/Pricing'
 import About from './pages/About'
 import Resources from './pages/Resources'
 import Contact from './pages/Contact'
+import ScrollToTop from './components/ScrollToTop'  // 👈 NEW import
 import './App.css'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop /> {/* 👈 NEW: ensures smooth scroll to top on route change */}
       <div className="min-h-screen bg-background">
         <Navbar />
         <main>
@@ -35,4 +37,3 @@ function App() {
 }
 
 export default App
-
