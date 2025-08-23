@@ -58,5 +58,15 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Bottom Footer */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-g
+          <p className="text-gray-400 text-sm">
+            © {new Date().getFullYear()} YashSphere AI. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer
