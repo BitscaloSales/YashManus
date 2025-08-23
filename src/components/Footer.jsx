@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Cloud, Zap, Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react'
+import logo from '../assets/yashsphere-logo.png'  // adjust path if needed
 
 const Footer = () => {
   return (
@@ -9,11 +10,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="flex items-center">
-                <Cloud className="h-8 w-8 text-primary" />
-                <Zap className="h-6 w-6 text-secondary -ml-2" />
-              </div>
-              <span className="text-xl font-bold">YashSphere AI</span>
+              <img 
+                src={logo} 
+                alt="YashSphere AI Logo" 
+                className="h-10 w-auto" 
+              />
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Expert cloud contact center solutions for Amazon Connect and Microsoft Dynamics 365 Contact Center. 
@@ -42,15 +43,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-gray-400" />
-                <span className="text-gray-300">hello@yashsphere.ai</span>
+                <span className="text-gray-300">Bitscalo_Sales@outlook.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-gray-400" />
-                <span className="text-gray-300">+1 (555) 123-4567</span>
+                <span className="text-gray-300">+91-9306410903</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-gray-400" />
-                <span className="text-gray-300">San Francisco, CA</span>
+                <span className="text-gray-300">New Delhi</span>
               </li>
             </ul>
           </div>
@@ -71,4 +72,3 @@ const Footer = () => {
 }
 
 export default Footer
-
