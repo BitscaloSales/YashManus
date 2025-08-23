@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Cloud, Zap, Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react'
+import { Mail, Phone, MapPin, Linkedin, Twitter } from 'lucide-react'
 import logo from '../assets/yashsphere-logo.png'  // adjust path if needed
 
 const Footer = () => {
@@ -15,6 +15,7 @@ const Footer = () => {
                 alt="YashSphere AI Logo" 
                 className="h-10 w-auto" 
               />
+              <span className="font-bold text-xl">YashSphere AI</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
               Expert cloud contact center solutions for Amazon Connect and Microsoft Dynamics 365 Contact Center. 
@@ -58,17 +59,4 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">
-            © 2024 YashSphere AI. All rights reserved.
-          </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link to="/privacy" className="text-gray-400 hover:text-white text-sm">Privacy Policy</Link>
-            <Link to="/terms" className="text-gray-400 hover:text-white text-sm">Terms of Service</Link>
-          </div>
-        </div>
-      </div>
-    </footer>
-  )
-}
-
-export default Footer
+          <p className="text-g
