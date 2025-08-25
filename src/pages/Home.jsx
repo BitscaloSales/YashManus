@@ -4,8 +4,8 @@ import { Badge } from '@/components/ui/badge'
 import { ArrowRight, CheckCircle, Users, TrendingUp, Clock, DollarSign, Zap, Shield, Globe, MessageSquare, BarChart3, Headphones } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import dashboardImage from '../assets/HvTgRy5XiD7u.webp'
-import amazonConnectImage from '../assets/y0ek7uW4kP2v.png'
-import microsoftImage from '../assets/tT8qbGDnMg5l.jpg'
+import amazonConnectImage from '../assets/Amazon_Connect_logo.png'
+import microsoftImage from '../assets/MSDynamicsCClogo.jpg'
 
 const Home = () => {
   const outcomes = [
