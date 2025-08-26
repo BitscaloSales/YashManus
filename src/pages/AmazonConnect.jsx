@@ -60,10 +60,10 @@ const AmazonConnect = () => {
         "Basic omnichannel setup",
         "Standard IVR configuration",
         "Contact Lens essentials",
-        "CRM integration (1 system)",
-        "Basic reporting dashboard"
+        "Basic reporting dashboard",
+		"Basic Support - 2 Weeks"
       ],
-      startingFrom: "$15K"
+      startingFrom: "$500"
     },
     {
       name: "Scale",
@@ -72,11 +72,11 @@ const AmazonConnect = () => {
         "Advanced omnichannel routing",
         "Custom IVR flows",
         "Full Contact Lens suite",
-        "Multiple CRM integrations",
+        "CRM integrations",
         "Workforce management basics",
         "Custom dashboards"
       ],
-      startingFrom: "$45K"
+      startingFrom: "$1K-1.5K"
     },
     {
       name: "Enterprise",
@@ -89,7 +89,7 @@ const AmazonConnect = () => {
         "Dedicated success manager",
         "24/7 premium support"
       ],
-      startingFrom: "$125K"
+      startingFrom: "$5K+"
     }
   ]
 
