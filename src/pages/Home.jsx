@@ -148,9 +148,9 @@ const Home = () => {
                       Learn More <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
-                  <Button variant="outline" className="flex-1" asChild>
+                  {/*<Button variant="outline" className="flex-1" asChild>
                     <Link to="/contact">Book Demo</Link>
-                  </Button>
+                  </Button>*/}
                 </div>
               </CardContent>
             </Card>

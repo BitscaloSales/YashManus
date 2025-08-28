@@ -1,0 +1,19 @@
+backend:
+  name: git-gateway
+  branch: main   # change to 'master' if your repo uses that
+
+media_folder: "public/uploads"   # Where uploaded images are stored in repo
+public_folder: "/uploads"        # How images are served in the site
+
+collections:
+  - name: "resources"
+    label: "Resources"
+    folder: "src/content/resources"   # You might need to adjust based on your project structure
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - { name: "date", label: "Date", widget: "datetime" }
+      - { name: "description", label: "Short Description", widget: "text" }
+      - { name: "thumbnail", label: "Thumbnail Image", widget: "image", required: false }
+      - { name: "body", label: "Article Body", widget: "markdown" }
