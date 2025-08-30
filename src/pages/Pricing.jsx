@@ -336,7 +336,7 @@ const Pricing = () => {
             <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
               Get Custom Quote <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-primary">
+            <Button size="lg" variant="outline" className="text-lg px-8 py-3 text-black">
               Schedule Consultation
             </Button>
           </div>
