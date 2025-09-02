@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -336,9 +337,11 @@ const Pricing = () => {
             <Button size="lg" variant="secondary" className="text-lg px-8 py-3">
               Get Custom Quote <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+            <Link to="/contact">
             <Button size="lg" variant="outline" className="text-lg px-8 py-3 text-black">
               Schedule Consultation
             </Button>
+            </Link>
           </div>
         </div>
       </section>

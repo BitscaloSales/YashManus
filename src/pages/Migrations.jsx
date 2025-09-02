@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
@@ -137,9 +138,11 @@ const Migrations = () => {
               <Button size="lg" className="text-lg px-8 py-3">
                 Get My Migration Plan <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
+              <Link to="/contact">
               <Button variant="outline" size="lg" className="text-lg px-8 py-3">
                 Free Assessment
               </Button>
+              </Link>
             </div>
           </div>
         </div>

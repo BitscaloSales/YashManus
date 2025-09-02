@@ -14,7 +14,8 @@ const Resources = () => {
       date: "March 15, 2024",
       readTime: "8 min read",
       category: "Amazon Connect",
-      featured: true
+      featured: true,
+      url: "https://www.linkedin.com/pulse/scaling-contact-center-quality-assurance-amazon-connect-bedrock-knkec/?trackingId=A2lFAmZKJV%2BzKUz0sBnpXQ%3D%3D"
     },
     {
       id: 2,
@@ -122,9 +123,15 @@ const Resources = () => {
                         <span>{post.readTime}</span>
                       </div>
                     </div>
+                    <a 
+                      href={post.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                    >
                     <Button size="lg">
                       Read Full Article <ArrowRight className="ml-2 h-5 w-5" />
                     </Button>
+                    </a>
                   </div>
                 </div>
                 <div className="bg-gray-100 min-h-[400px] flex items-center justify-center">

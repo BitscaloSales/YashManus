@@ -177,7 +177,7 @@ const Contact = () => {
                         type="tel"
                         name="phone"
                         className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-                        placeholder="+91-9306410903"
+                        placeholder="+91-0000000000"
                       />
                     </div>
                   </div>
