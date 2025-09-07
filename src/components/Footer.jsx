@@ -46,10 +46,10 @@ const Footer = () => {
                 <Mail className="h-4 w-4 text-gray-400" />
                 <span className="text-gray-300">Bitscalo_Sales@outlook.com</span>
               </li>
-              <li className="flex items-center space-x-2">
+              {/*<li className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-gray-400" />
                 <span className="text-gray-300">+91-9306410903</span>
-              </li>
+              </li>*/}
               <li className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-gray-400" />
                 <span className="text-gray-300">New Delhi</span>

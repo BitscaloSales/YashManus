@@ -10,57 +10,63 @@ const Resources = () => {
       id: 1,
       title: "Amazon Connect Migration Checklist: 15 Critical Steps for Success",
       excerpt: "A comprehensive guide to planning and executing your Amazon Connect migration without missing crucial details that could derail your project.",
-      author: "Sarah Chen",
+      author: "Sarah",
       date: "March 15, 2024",
       readTime: "8 min read",
       category: "Amazon Connect",
       featured: true,
-      url: "https://www.linkedin.com/pulse/scaling-contact-center-quality-assurance-amazon-connect-bedrock-knkec/?trackingId=A2lFAmZKJV%2BzKUz0sBnpXQ%3D%3D"
+      url: "https://www.linkedin.com/pulse/amazon-connect-migration-checklist-15-critical-steps-success-zfjhf/?trackingId=l60B3W8EZr1qhwt1eDNY1Q%3D%3D"
     },
     {
       id: 2,
-      title: "Microsoft Dynamics 365 Contact Center Best Practices: Lessons from 50+ Implementations",
+      title: "Microsoft Dynamics 365 Contact Center Best Practices",
       excerpt: "Proven strategies for maximizing your Microsoft investment, from Teams integration to Power Platform automation that drives real results.",
-      author: "Michael Rodriguez", 
+      author: "Amrit K", 
       date: "March 10, 2024",
       readTime: "12 min read",
-      category: "Microsoft Dynamics"
+      category: "Microsoft Dynamics",
+      url: "https://www.linkedin.com/pulse/microsoft-dynamics-365-contact-center-best-practices-lessons-ux9mc/"
+
     },
     {
       id: 3,
       title: "The Complete Omnichannel Routing Playbook: Beyond Basic Setup",
       excerpt: "Advanced routing strategies that reduce wait times by 40% and improve first-call resolution rates across voice, chat, email, and social channels.",
-      author: "Jennifer Kim",
+      author: "Sarah",
       date: "March 5, 2024", 
       readTime: "10 min read",
-      category: "Strategy"
+      category: "Strategy",
+      url: "https://www.linkedin.com/pulse/amazon-connect-migration-checklist-15-critical-steps-success-zfjhf/?trackingId=l60B3W8EZr1qhwt1eDNY1Q%3D%3D"
     },
     {
       id: 4,
       title: "IVR Design Patterns That Actually Reduce AHT (With Real Examples)",
       excerpt: "Stop frustrating customers with phone trees. Learn the IVR design principles that leading brands use to improve self-service and reduce handling time.",
-      author: "David Thompson",
+      author: "Sarah",
       date: "February 28, 2024",
       readTime: "7 min read", 
-      category: "IVR Design"
+      category: "IVR Design",
+      url: "https://www.linkedin.com/pulse/amazon-connect-migration-checklist-15-critical-steps-success-zfjhf/?trackingId=l60B3W8EZr1qhwt1eDNY1Q%3D%3D"
     },
     {
       id: 5,
       title: "Workforce Management Quick Start Guide for Growing Contact Centers",
       excerpt: "From basic scheduling to advanced forecasting: how to implement WFM that scales with your business without overwhelming your team.",
-      author: "Jennifer Kim",
+      author: "Zen",
       date: "February 20, 2024",
       readTime: "9 min read",
-      category: "WFM"
+      category: "WFM",
+      url: "https://www.linkedin.com/pulse/amazon-connect-migration-checklist-15-critical-steps-success-zfjhf/?trackingId=l60B3W8EZr1qhwt1eDNY1Q%3D%3D"
     },
     {
       id: 6,
       title: "Contact Center Analytics That Actually Move CSAT: 12 KPIs That Matter",
       excerpt: "Move beyond vanity metrics. Discover the analytics and dashboards that correlate with customer satisfaction and drive actionable improvements.",
-      author: "Sarah Chen", 
+      author: "Sarah", 
       date: "February 15, 2024",
       readTime: "11 min read",
-      category: "Analytics"
+      category: "Analytics",
+      url: "https://www.linkedin.com/pulse/amazon-connect-migration-checklist-15-critical-steps-success-zfjhf/?trackingId=l60B3W8EZr1qhwt1eDNY1Q%3D%3D"
     }
   ]
 
@@ -218,9 +224,14 @@ const Resources = () => {
                     </div>
                     <span>{post.date}</span>
                   </div>
+                  <a href={post.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+  >
                   <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-white transition-colors duration-200">
                     Read More <ArrowRight className="ml-2 h-4 w-4" />
                   </Button>
+                  </a>
                 </CardContent>
               </Card>
             ))}

@@ -83,7 +83,7 @@ const MicrosoftDynamics = () => {
         "Power BI essentials",
         "Basic Copilot features"
       ],
-      startingFrom: "$18K"
+      startingFrom: "$1000"
     },
     {
       name: "Scale",
@@ -96,7 +96,7 @@ const MicrosoftDynamics = () => {
         "Workforce management",
         "Knowledge management"
       ],
-      startingFrom: "$52K"
+      startingFrom: "Custom"
     },
     {
       name: "Enterprise",
@@ -109,7 +109,7 @@ const MicrosoftDynamics = () => {
         "Dedicated success manager",
         "24/7 premium support"
       ],
-      startingFrom: "$135K"
+      startingFrom: "Custom"
     }
   ]
 

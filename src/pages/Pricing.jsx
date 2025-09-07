@@ -9,7 +9,7 @@ const Pricing = () => {
     {
       name: "Launch",
       description: "Perfect for SMB pilots or single queue deployments",
-      price: "Starting from $2.5K",
+      price: "Starting from $500",
       duration: "4-8 weeks",
       features: [
         "Basic omnichannel setup (voice, chat, email)",
@@ -20,15 +20,15 @@ const Pricing = () => {
         "30-day post-launch support"
       ],
       addOns: [
-        "WhatsApp integration: +$500",
-        "Advanced analytics: +$1K",
-        "Additional CRM: +$500 per system"
+        "Social Apps integration",
+        "Advanced analytics",
+        "Additional CRM Integrations"
       ]
     },
     {
       name: "Scale",
-      description: "Multi-queue operations with advanced analytics and WFM",
-      price: "Starting from $8K", 
+      description: "Multi-queue operations with advanced analytics & Integrations",
+      price: "Starting from $1K", 
       duration: "8-16 weeks",
       popular: true,
       features: [
@@ -42,15 +42,15 @@ const Pricing = () => {
         "90-day post-launch support"
       ],
       addOns: [
-        "Advanced WFM: +$2K",
-        "Custom AI/bots: +$3K",
-        "Premium analytics: +$1.5K"
+        "CRM Integrations",
+        "Custom AI/bots",
+        "Premium analytics"
       ]
     },
     {
       name: "Enterprise",
       description: "Complex implementations with premium features and support",
-      price: "Starting from $25K",
+      price: "Starting from $2K",
       duration: "16-24 weeks", 
       features: [
         "Enterprise omnichannel platform",
@@ -63,9 +63,9 @@ const Pricing = () => {
         "12-month premium support"
       ],
       addOns: [
-        "Multi-region deployment: +$5K",
-        "Custom development: $100/hour",
-        "24/7 white-glove support: +$3K/year"
+        "Multi-business deployment",
+        "Custom development",
+        "24/7 white-glove support"
       ]
     }
   ]
@@ -74,25 +74,25 @@ const Pricing = () => {
     {
       category: "Advanced Analytics",
       services: [
-        { name: "Custom Power BI dashboards", price: "$3K - $8K" },
-        { name: "Real-time wallboards", price: "$2K - $5K" },
-        { name: "Predictive analytics setup", price: "$8K - $15K" }
+        { name: "Custom Power BI dashboards", price: "" },
+        { name: "Real-time wallboards", price: "" },
+        { name: "Predictive analytics setup", price: "" }
       ]
     },
     {
       category: "Custom IVR & Bots",
       services: [
-        { name: "Advanced IVR flows", price: "$5K - $12K" },
-        { name: "Conversational AI bots", price: "$10K - $25K" },
-        { name: "Voice biometrics", price: "$8K - $18K" }
+        { name: "Advanced IVR flows", price: "" },
+        { name: "Conversational AI bots", price: "" },
+        { name: "Voice biometrics", price: "" }
       ]
     },
     {
       category: "Premium Support",
       services: [
-        { name: "24/7 managed services", price: "$15K - $30K/year" },
-        { name: "Dedicated success manager", price: "$25K - $50K/year" },
-        { name: "Priority support SLA", price: "$5K - $12K/year" }
+        { name: "24/7 managed services", price: "" },
+        { name: "Dedicated success manager", price: "" },
+        { name: "Priority support SLA", price: "" }
       ]
     }
   ]

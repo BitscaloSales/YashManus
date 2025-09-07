@@ -5,13 +5,13 @@ import { ArrowRight, Mail, Phone, MapPin, Clock, MessageSquare, Calendar } from 
 
 const Contact = () => {
   const contactMethods = [
-    {
+    /*{
       icon: Phone,
       title: "Phone",
       details: "+91-9306410903",
       description: "Mon-Fri, 9 AM - 6 PM IST",
       action: "Call Now"
-    },
+    },*/
     {
       icon: Mail,
       title: "Email", 
@@ -19,19 +19,19 @@ const Contact = () => {
       description: "We respond within 2 hours",
       action: "Send Email"
     },
-    {
+    /*{
       icon: MessageSquare,
       title: "Live Chat",
       details: "Available on website",
       description: "Instant responses during business hours",
       action: "Start Chat"
-    },
+    },*/
     {
       icon: Calendar,
       title: "Schedule Meeting",
       details: "Book a consultation",
       description: "30-minute strategy session",
-      action: "Book Now"
+      action: "Coming Soon"
     }
   ]
 
@@ -40,7 +40,7 @@ const Contact = () => {
       city: "New Delhi",
       address: "Business District",
       zipcode: "New Delhi, India",
-      phone: "+91-9306410903",
+      /*phone: "+91-9306410903",*/
       primary: true
     }
   ]
@@ -90,9 +90,17 @@ const Contact = () => {
                   <p className="text-gray-600">{method.description}</p>
                 </CardHeader>
                 <CardContent>
+                  {method.title === "Email" ? (
+                   <a href={`mailto:${method.details}`}>
                   <Button className="w-full group-hover:bg-primary group-hover:text-white transition-colors duration-300">
                     {method.action}
                   </Button>
+                  </a>
+                  ) : (
+                  <Button className="w-full group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                  {method.action}
+                  </Button>
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -380,7 +388,7 @@ const Contact = () => {
       </section>
 
       {/* Map Placeholder */}
-      <section className="py-20 bg-gray-50">
+      {/*<section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Card className="overflow-hidden">
             <div className="bg-gray-200 h-96 flex items-center justify-center">
@@ -392,7 +400,7 @@ const Contact = () => {
             </div>
           </Card>
         </div>
-      </section>
+      </section> */}
 
       {/* Compliance Links */}
       <section className="py-12 bg-white border-t">
