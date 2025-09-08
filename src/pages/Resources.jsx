@@ -15,17 +15,19 @@ const Resources = () => {
       readTime: "8 min read",
       category: "Amazon Connect",
       featured: true,
-      url: "https://www.linkedin.com/pulse/amazon-connect-migration-checklist-15-critical-steps-success-zfjhf/?trackingId=l60B3W8EZr1qhwt1eDNY1Q%3D%3D"
+      url: "https://www.linkedin.com/pulse/amazon-connect-migration-checklist-15-critical-steps-success-zfjhf/?trackingId=l60B3W8EZr1qhwt1eDNY1Q%3D%3D",
+      image: "/images/amazon_connect_migration_feature_image.png"
     },
     {
       id: 2,
       title: "Microsoft Dynamics 365 Contact Center Best Practices",
       excerpt: "Proven strategies for maximizing your Microsoft investment, from Teams integration to Power Platform automation that drives real results.",
-      author: "Amrit K", 
+      author: "Amrit K",
       date: "March 10, 2024",
       readTime: "12 min read",
       category: "Microsoft Dynamics",
-      url: "https://www.linkedin.com/pulse/microsoft-dynamics-365-contact-center-best-practices-lessons-ux9mc/"
+      url: "https://www.linkedin.com/pulse/microsoft-dynamics-365-contact-center-best-practices-lessons-ux9mc/",
+      image: "/images/MicrosoftDynamics365ContactCenterBestPractices.png"
 
     },
     {
@@ -33,10 +35,11 @@ const Resources = () => {
       title: "The Complete Omnichannel Routing Playbook: Beyond Basic Setup",
       excerpt: "Advanced routing strategies that reduce wait times by 40% and improve first-call resolution rates across voice, chat, email, and social channels.",
       author: "Sarah",
-      date: "March 5, 2024", 
+      date: "March 5, 2024",
       readTime: "10 min read",
       category: "Strategy",
-      url: "https://www.linkedin.com/pulse/amazon-connect-migration-checklist-15-critical-steps-success-zfjhf/?trackingId=l60B3W8EZr1qhwt1eDNY1Q%3D%3D"
+      url: "https://www.linkedin.com/pulse/complete-omnichannel-routing-playbook-beyond-basic-setup-yashsphere-jajbc/",
+      image: "/images/omnichannel_routing_feature_image.png"
     },
     {
       id: 4,
@@ -44,9 +47,10 @@ const Resources = () => {
       excerpt: "Stop frustrating customers with phone trees. Learn the IVR design principles that leading brands use to improve self-service and reduce handling time.",
       author: "Sarah",
       date: "February 28, 2024",
-      readTime: "7 min read", 
+      readTime: "7 min read",
       category: "IVR Design",
-      url: "https://www.linkedin.com/pulse/amazon-connect-migration-checklist-15-critical-steps-success-zfjhf/?trackingId=l60B3W8EZr1qhwt1eDNY1Q%3D%3D"
+      url: "https://www.linkedin.com/pulse/amazon-connect-migration-checklist-15-critical-steps-success-zfjhf/?trackingId=l60B3W8EZr1qhwt1eDNY1Q%3D%3D",
+      image: "/images/ivr_design_patterns_feature.png"
     },
     {
       id: 5,
@@ -62,7 +66,7 @@ const Resources = () => {
       id: 6,
       title: "Contact Center Analytics That Actually Move CSAT: 12 KPIs That Matter",
       excerpt: "Move beyond vanity metrics. Discover the analytics and dashboards that correlate with customer satisfaction and drive actionable improvements.",
-      author: "Sarah", 
+      author: "Sarah",
       date: "February 15, 2024",
       readTime: "11 min read",
       category: "Analytics",
@@ -83,7 +87,7 @@ const Resources = () => {
               Resources & Insights
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Expert insights, best practices, and actionable guides to help you succeed 
+              Expert insights, best practices, and actionable guides to help you succeed
               with your contact center transformation. Learn from our experience with 200+ implementations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -110,6 +114,7 @@ const Resources = () => {
           {blogPosts.filter(post => post.featured).map((post) => (
             <Card key={post.id} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                {/* Left column with text */}
                 <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-12 flex items-center">
                   <div>
                     <Badge className="mb-4">{post.category}</Badge>
@@ -129,28 +134,28 @@ const Resources = () => {
                         <span>{post.readTime}</span>
                       </div>
                     </div>
-                    <a 
-                      href={post.url} 
-                      target="_blank" 
+                    <a
+                      href={post.url}
+                      target="_blank"
                       rel="noopener noreferrer"
                     >
-                    <Button size="lg">
-                      Read Full Article <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
+                      <Button size="lg">
+                        Read Full Article <ArrowRight className="ml-2 h-5 w-5" />
+                      </Button>
                     </a>
                   </div>
                 </div>
-                <div className="bg-gray-100 min-h-[400px] flex items-center justify-center">
-                  <div className="text-center text-gray-500">
-                    <div className="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <span className="text-2xl">📊</span>
-                    </div>
-                    <p>Featured Article Image</p>
-                  </div>
-                </div>
+
+                {/* Right column with image */}
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </Card>
           ))}
+
         </div>
       </section>
 
@@ -187,20 +192,20 @@ const Resources = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.filter(post => !post.featured).map((post) => (
               <Card key={post.id} className="hover:shadow-lg transition-shadow duration-300 cursor-pointer group">
-                <div className="bg-gradient-to-br from-primary/5 to-secondary/5 h-48 flex items-center justify-center">
-                  <div className="text-center text-gray-400">
-                    <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-2">
-                      <span className="text-xl">
-                        {post.category === 'Amazon Connect' ? '☁️' : 
-                         post.category === 'Microsoft Dynamics' ? '🔷' :
-                         post.category === 'Strategy' ? '🎯' :
-                         post.category === 'IVR Design' ? '📞' :
-                         post.category === 'WFM' ? '👥' : '📈'}
-                      </span>
+                <div className="h-48 overflow-hidden">
+                  {post.image ? (
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="bg-gray-100 flex items-center justify-center h-full text-gray-400">
+                      No Image
                     </div>
-                    <p className="text-sm">Article Image</p>
-                  </div>
+                  )}
                 </div>
+
                 <CardHeader>
                   <Badge variant="secondary" className="w-fit mb-2">{post.category}</Badge>
                   <CardTitle className="text-xl group-hover:text-primary transition-colors duration-200">
@@ -224,13 +229,13 @@ const Resources = () => {
                     </div>
                     <span>{post.date}</span>
                   </div>
-                  <a href={post.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-  >
-                  <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-white transition-colors duration-200">
-                    Read More <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  <a href={post.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline" className="w-full group-hover:bg-primary group-hover:text-white transition-colors duration-200">
+                      Read More <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
                   </a>
                 </CardContent>
               </Card>
@@ -246,7 +251,7 @@ const Resources = () => {
             Stay Updated with Expert Insights
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Get the latest contact center trends, best practices, and implementation guides 
+            Get the latest contact center trends, best practices, and implementation guides
             delivered to your inbox monthly.
           </p>
           <Card className="max-w-md mx-auto p-6">
